@@ -171,7 +171,7 @@ const Panda = () => {
       >
    <div  className={styles.imageContainer}>
     <Image 
-          src="/../public/image/pandabg.png"
+          src="/image/pandabg.png"
           fill
       alt="image" />
           </div>
@@ -191,13 +191,13 @@ const Panda = () => {
       <div className="grid grid-cols-3 items-center justify-center lg:p-0 overflow-x-scroll no-scrollbar">
        
        <Image className=""
-          src="/../public/image/NFT1.png"
+          src="/image/NFT1.png"
           height={500}
           width={500}
       alt="image" />
       
        <Image 
-          src="/../public/image/NFT2.png"
+          src="/image/NFT2.png"
           height={500}
           width={500}
       alt="image" />

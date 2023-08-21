@@ -24,8 +24,8 @@ const ServiceCard = () => {
    
          <div className="flex pt-5 ">
               
-           <Image 
-           src="/../public/image/figma.png"
+           <Image
+           src="/image/figma.png"
            width={100}
            height={100}
            alt="figma"
@@ -36,19 +36,19 @@ const ServiceCard = () => {
     <div className=" "><p className="text-end  min-[320px]:mt-5 lg:mt-0">Website Development</p>
     <div id="scrollContainer" className="flex flex-row-reverse pt-5 gap-5 overflow-auto scroll-smooth ">
     <Image 
-           src="/../public/image/javascript.png"
+           src="/image/javascript.png"
            width={100}
            height={100}
            alt="figma"
            />
     <Image 
-           src="/../public/image/thailwind.png"
+           src="/image/thailwind.png"
            width={100}
            height={100}
            alt="figma"
            />
     <Image 
-           src="/../public/image/react.png"
+           src="/image/react.png"
            width={100}
            height={100}
            alt="figma"
