@@ -159,7 +159,7 @@ const Proedge = () => {
       >
    <div  className={styles.imageContainer}>
     <Image 
-          src="/../public/image/proedgelogobg.png"
+          src="/image/proedgelogobg.png"
           fill
       alt="image" />
           </div>
@@ -179,25 +179,25 @@ const Proedge = () => {
       <div className="grid grid-cols-2 lg:flex items-center justify-center overflow-x-scroll no-scrollbar">
        
        <Image 
-          src="/../public/image/3dweb.png"
+          src="/image/3dweb.png"
           height={400}
           width={400}
       alt="image" />
       
        <Image 
-          src="/../public/image/ai1.png"
+          src="/image/ai1.png"
           height={400}
           width={400}
       alt="image" />
 
        <Image 
-          src="/../public/image/phone.png"
+          src="/image/phone.png"
           height={400}
           width={400}
       alt="image" />
      
        <Image 
-          src="/../public/image/block.png"
+          src="/image/block.png"
           height={400}
           width={400}
       alt="image" />

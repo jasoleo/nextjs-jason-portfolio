@@ -54,7 +54,7 @@ const ServiceCard = () => {
            alt="figma"
            />
     <Image 
-           src="/../public/image/nextjs.png"
+           src="/image/nextjs.png"
            width={100}
            height={100}
            alt="figma"
@@ -75,25 +75,25 @@ const ServiceCard = () => {
 
       <div className="flex pt-5 gap-5 overflow-auto ">
         <Image 
-        src="/../public/image/pr.png"
+        src="/image/pr.png"
         width={100}
         height={100}
         alt=""
         />
        <Image 
-        src="/../public/image/ae.png"
+        src="/image/ae.png"
         width={100}
         height={100}
         alt=""
         />
         <Image 
-        src="/../public/image/dr.png"
+        src="/image/dr.png"
         width={100}
         height={100}
         alt=""
         />
         <Image 
-        src="/../public/image/filmora.png"
+        src="/image/filmora.png"
         width={100}
         height={100}
         alt="Filmora"
@@ -104,13 +104,13 @@ const ServiceCard = () => {
  <div className=" "><p className="text-end min-[320px]:mt-5 lg:mt-0" >3D Motion</p>
  <div className="flex flex-row-reverse pt-5 gap-5 overflow-hidden">
  <Image 
-        src="/../public/image/spline.png"
+        src="/image/spline.png"
         width={100}
         height={100}
         alt="figma"
         />
  <Image 
-        src="/../public/image/blender.png"
+        src="/image/blender.png"
         width={100}
         height={100}
         alt="figma"
@@ -128,13 +128,13 @@ const ServiceCard = () => {
 
       <div className="flex pt-5 gap-5 ">
         <Image 
-        src="/../public/image/ai.png"
+        src="/image/ai.png"
         width={100}
         height={100}
         alt=""
         />
        <Image 
-        src="/../public/image/ps.png"
+        src="/image/ps.png"
         width={100}
         height={100}
         alt=""
@@ -145,13 +145,13 @@ const ServiceCard = () => {
  <div className=" "><p className="text-end min-[320px]:mt-5 lg:mt-0">AI Generation</p>
  <div className="flex flex-row-reverse pt-5 gap-5">
  <Image 
-        src="/../public/image/sd.png"
+        src="/image/sd.png"
         width={100}
         height={100}
         alt="figma"
         />
          <Image 
-        src="/../public/image/runway.png"
+        src="/image/runway.png"
         width={100}
         height={100}
         alt="figma"

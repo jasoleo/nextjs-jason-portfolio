@@ -221,7 +221,7 @@ const Web3m = () => {
       <div className="flex  rounded-2xl overflow-auto justify-center ">
       <Link href="/w3s"  >
       <Image 
-          src="/../public/image/web3soc.png"
+          src="/image/web3soc.png"
           height={500}
           width={500}
       alt="image" />

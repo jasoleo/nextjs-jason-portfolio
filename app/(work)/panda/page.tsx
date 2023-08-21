@@ -203,27 +203,27 @@ const Panda = () => {
       alt="image" />
 
        <Image 
-          src="/../public/image/NFT3.png"
+          src="/image/NFT3.png"
           height={500}
           width={500}
       alt="image" />
      
        <Image 
-          src="/../public/image/NFT6.png"
-          height={500}
-          width={500}
-      alt="image" />
-      
-     
-       <Image 
-          src="/../public/image/NFT7.png"
+          src="/image/NFT6.png"
           height={500}
           width={500}
       alt="image" />
       
      
        <Image 
-          src="/../public/image/NFT8.png"
+          src="/image/NFT7.png"
+          height={500}
+          width={500}
+      alt="image" />
+      
+     
+       <Image 
+          src="/image/NFT8.png"
           height={500}
           width={500}
       alt="image" />

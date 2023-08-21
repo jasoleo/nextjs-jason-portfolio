@@ -121,7 +121,7 @@ const Proedu = () => {
 
         </div>
         <div> <Image 
-          src="/../public/image/proedu1440.png"
+          src="/image/proedu1440.png"
           height={1920}
           width={1920}
       alt="image" /></div>
@@ -141,7 +141,7 @@ const Proedu = () => {
       >
    <div  className={styles.imageContainer}>
     <Image 
-          src="/../public/image/proedulong.png"
+          src="/image/proedulong.png"
           fill
       alt="image" />
           </div>
