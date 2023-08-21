@@ -13,14 +13,14 @@ import Gallery from "@/components/Gallery/page";
 import { Suspense, useEffect, useState } from "react";
 import Lenis from '@studio-freight/lenis';
 
-const about = () => {
+const WorkPage = () => {
 const [isLoading, setIsLoading] = useState(true);
   
 useEffect( () => {
   (
     async () => {
-        const LocomotiveScroll = (await import('locomotive-scroll')).default
-        const locomotiveScroll = new LocomotiveScroll();
+        // const LocomotiveScroll = (await import('locomotive-scroll')).default
+        // const locomotiveScroll = new LocomotiveScroll();
 
         setTimeout( () => {
           setIsLoading(false);
@@ -37,7 +37,7 @@ useEffect( () => {
 
   const lenis = new Lenis()
 
-  function raf(time) {
+  function raf(time:any) {
     lenis.raf(time)
     requestAnimationFrame(raf)}
 
@@ -54,7 +54,7 @@ useEffect( () => {
     <div className="relative overflow-hidden py-8"></div>
     <div className="  rounded-3xl border border-zinc-900 m-5 p-5 md:p-20  " id="home">
         <div className="grid text-3xl md:px-10 tracking-tighter indent-32 items-center justify-center font-light text-start md:text-4xl lg:text-5xl xl:text-8xl">
-        <p className="pb-5 ">My mission is to amplify the voices of the world's most visionary companies and creators. Together, we sculpt brands and narratives that reshape how we engage with and perceive the world around us.</p>
+        <p className="pb-5 ">My mission is to amplify the voices of the world&apos;s most visionary companies and creators. Together, we sculpt brands and narratives that reshape how we engage with and perceive the world around us.</p>
         <div className=" rounded-3xl overflow-hidden">
         <Image
       src="/image/workhero.png"
@@ -87,4 +87,4 @@ I'm passionate about learning new skills.</h1>
     );
 }
  
-export default about;
+export default WorkPage;

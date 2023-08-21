@@ -13,15 +13,15 @@ import FramerMagnetic from '@/components/framer';
 import { MoveUpRight, Briefcase    } from 'lucide-react';
 import VimeoVideo from '@/components/VimeoVideo';
 
-const about = () => {
+const Proedge = () => {
 
   const [isLoading, setIsLoading] = useState(true);
   
   useEffect( () => {
     (
       async () => {
-          const LocomotiveScroll = (await import('locomotive-scroll')).default
-          const locomotiveScroll = new LocomotiveScroll();
+          // const LocomotiveScroll = (await import('locomotive-scroll')).default
+          // const locomotiveScroll = new LocomotiveScroll();
 
           setTimeout( () => {
             setIsLoading(false);
@@ -38,7 +38,7 @@ const about = () => {
 
     const lenis = new Lenis()
 
-    function raf(time) {
+    function raf(time:any) {
       lenis.raf(time)
       requestAnimationFrame(raf)}
 
@@ -60,7 +60,7 @@ const about = () => {
   useEffect( () => {
     const lenis = new Lenis()
 
-    const raf = (time) => {
+    const raf = (time:any) => {
       lenis.raf(time)
       requestAnimationFrame(raf)
     }
@@ -137,7 +137,7 @@ const about = () => {
           src="/video/proedge_1.mp4"
           height={1920}
           width={1920}
-      alt="video/mp4" /></div>
+       /></div>
           <h1 className=" pt-12 indent-20 text-3xl sm:text-4xl lg:text-6xl ">ProEdge is a 3D company website for which I led the UI design, front-end development, and crafted intricate 3D models to bring a dynamic and immersive digital presence to the brand.</h1>
                 </div>
      <div className="grid items-center justify-center">
@@ -146,7 +146,7 @@ const about = () => {
           src="/video/proedge_2.mp4"
           height={1920}
           width={1920}
-      alt="video/mp4" />
+       />
       </div>
 
 <div>
@@ -214,13 +214,23 @@ const about = () => {
       <h1 className="text-4xl md:text-6xl py-5  grid items-center justify-center ">Panda Warrior</h1>     
       <div className="rounded-2xl overflow-auto  ">
       <Link href="/panda"  >
-    <video muted loop autoPlay 
-             onMouseOver={event => event.target.play()}
-             onMouseOut={event => event.target.pause()}
-              src='video/panda.mp4' 
-              height={500}
-              width={500}
-              type="video/mp4"/>
+      <video 
+  muted 
+  loop 
+  autoPlay 
+  onMouseOver={event => {
+    const target = event.target as HTMLVideoElement;
+    target.play();
+  }}
+  onMouseOut={event => {
+    const target = event.target as HTMLVideoElement;
+    target.pause();
+  }}
+  src='video/panda.mp4' 
+  height={500}
+  width={500}
+/>
+
               </Link>
               </div>
     </div>
@@ -256,4 +266,4 @@ const about = () => {
 }
  
 
-export default about;
+export default Proedge;

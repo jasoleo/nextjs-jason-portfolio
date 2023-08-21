@@ -11,7 +11,7 @@ import Preloader from '@/components/preloader/preloader_about';
 
 
 
-const about = () => {
+const AboutPage = () => {
 
  
   const [isLoading, setIsLoading] = useState(true);
@@ -19,8 +19,8 @@ const about = () => {
   useEffect( () => {
     (
       async () => {
-          const LocomotiveScroll = (await import('locomotive-scroll')).default
-          const locomotiveScroll = new LocomotiveScroll();
+          // const LocomotiveScroll = (await import('locomotive-scroll')).default
+          // const locomotiveScroll = new LocomotiveScroll();
 
           setTimeout( () => {
             setIsLoading(false);
@@ -37,7 +37,7 @@ const about = () => {
 
     const lenis = new Lenis()
 
-    function raf(time) {
+    function raf(time:any) {
       lenis.raf(time)
       requestAnimationFrame(raf)}
 
@@ -71,4 +71,4 @@ I'm passionate about learning new skills.</h1>
     );
 }
  
-export default about;
+export default AboutPage;

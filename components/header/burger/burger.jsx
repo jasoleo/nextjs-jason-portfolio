@@ -1,8 +1,7 @@
 'use client';
 import styles from './style.module.scss';
 
-export default function ({openMenu}) {
-
+function Burger({ openMenu }) {
     return (
         <div onClick={() => {openMenu()}} className={styles.button}>
             <div className={styles.background}></div>
@@ -14,3 +13,5 @@ export default function ({openMenu}) {
         </div>
     )
 }
+
+export default Burger;

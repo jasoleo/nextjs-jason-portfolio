@@ -13,15 +13,15 @@ import FramerMagnetic from '@/components/framer';
 import { MoveUpRight, Briefcase    } from 'lucide-react';
 
 
-const about = () => {
+const Proedu = () => {
 
   const [isLoading, setIsLoading] = useState(true);
   
   useEffect( () => {
     (
       async () => {
-          const LocomotiveScroll = (await import('locomotive-scroll')).default
-          const locomotiveScroll = new LocomotiveScroll();
+          // const LocomotiveScroll = (await import('locomotive-scroll')).default
+          // const locomotiveScroll = new LocomotiveScroll();
 
           setTimeout( () => {
             setIsLoading(false);
@@ -38,7 +38,7 @@ const about = () => {
 
     const lenis = new Lenis()
 
-    function raf(time) {
+    function raf(time:any) {
       lenis.raf(time)
       requestAnimationFrame(raf)}
 
@@ -60,7 +60,7 @@ const about = () => {
   useEffect( () => {
     const lenis = new Lenis()
 
-    const raf = (time) => {
+    const raf = (time:any) => {
       lenis.raf(time)
       requestAnimationFrame(raf)
     }
@@ -156,12 +156,18 @@ const about = () => {
       <div className="rounded-2xl overflow-auto">
       <Link href="/proedge"  >
     <video muted loop autoPlay 
-             onMouseOver={event => event.target.play()}
-             onMouseOut={event => event.target.pause()}
+           onMouseOver={event => {
+            const target = event.target as HTMLVideoElement;
+            target.play();
+          }}
+          onMouseOut={event => {
+            const target = event.target as HTMLVideoElement;
+            target.pause();
+          }}
               src='video/proedge_1.mp4' 
               height={500}
               width={500}
-              type="video/mp4"/>
+             />
               </Link>
               </div>
     </div>
@@ -197,4 +203,4 @@ const about = () => {
 }
  
 
-export default about;
+export default Proedu;

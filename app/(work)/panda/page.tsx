@@ -13,15 +13,16 @@ import VimeoVideo from '@/components/VimeoVideo';
 import FramerMagnetic from '@/components/framer';
 import {  Briefcase    } from 'lucide-react';
 
-const about = () => {
+
+const Panda = () => {
 
   const [isLoading, setIsLoading] = useState(true);
   
   useEffect( () => {
     (
       async () => {
-          const LocomotiveScroll = (await import('locomotive-scroll')).default
-          const locomotiveScroll = new LocomotiveScroll();
+          // const LocomotiveScroll = (await import('locomotive-scroll')).default
+          // const locomotiveScroll = new LocomotiveScroll();
 
           setTimeout( () => {
             setIsLoading(false);
@@ -38,7 +39,7 @@ const about = () => {
 
     const lenis = new Lenis()
 
-    function raf(time) {
+    function raf(time:any) {
       lenis.raf(time)
       requestAnimationFrame(raf)}
 
@@ -60,7 +61,7 @@ const about = () => {
   useEffect( () => {
     const lenis = new Lenis()
 
-    const raf = (time) => {
+    const raf = (time:any) => {
       lenis.raf(time)
       requestAnimationFrame(raf)
     }
@@ -124,7 +125,7 @@ const about = () => {
           src="/video/panda.mp4"
           height={1920}
           width={1920}
-      alt="video/mp4" /></div>
+      /></div>
           <h1 className=" pt-12 indent-20 text-2xl sm:text-4xl lg:text-6xl ">Panda Warrior is a GameFi project on the blockchain, where I spearheaded the UI design, front-end development, NFT Design, and designed detailed 3D models to enhance the gaming experience and interface.</h1>
                 </div>
 
@@ -136,7 +137,7 @@ const about = () => {
           src="/video/panda_mobile.mp4"
           height={1080}
           width={1920}
-      alt="video/mp4" />
+       />
       </div>
       
 
@@ -146,7 +147,7 @@ const about = () => {
           src="/video/panda_mobile2.mp4"
           height={1080}
           width={1920}
-      alt="video/mp4" />
+       />
       </div>
 
      <div className="grid items-center justify-center">
@@ -155,7 +156,7 @@ const about = () => {
           src="/video/panda_mobile3.mp4"
           height={1080}
           width={1920}
-      alt="video/mp4" />
+       />
       </div>
 
       </div>
@@ -243,12 +244,19 @@ const about = () => {
       <div className="rounded-2xl overflow-auto  ">
       <Link href="/pipl"  >
     <video muted loop autoPlay 
-             onMouseOver={event => event.target.play()}
-             onMouseOut={event => event.target.pause()}
+            onMouseOver={event => {
+              const target = event.target as HTMLVideoElement;
+              target.play();
+            }}
+            onMouseOut={event => {
+              const target = event.target as HTMLVideoElement;
+              target.pause();
+            }}
+           
               src='video/pipl_1.mp4' 
               height={500}
               width={500}
-              type="video/mp4"/>
+              />
               </Link>
               </div>
     </div>
@@ -285,4 +293,4 @@ const about = () => {
 }
  
 
-export default about;
+export default Panda;

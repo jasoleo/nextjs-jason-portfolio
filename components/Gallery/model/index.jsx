@@ -11,7 +11,7 @@ const scaleAnimation = {
     closed: {scale: 0, x:"-50%", y:"-50%", transition: {duration: 0.4, ease: [0.32, 0, 0.67, 0]}}
 }
 
-export default function index({modal, projects}) {
+export default function GalleryModal({modal, projects}) {
 
   const { active, index } = modal;
   const modalContainer = useRef(null);
@@ -45,12 +45,12 @@ export default function index({modal, projects}) {
         <motion.div ref={modalContainer} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className={styles.modalContainer}>
             <div style={{top: index * -100 + "%"}} className={styles.modalSlider}>
             {
-                projects.map( (project, index) => {
+                projects.map( (project, idx) => {
                 const { src, color, href } = project;
 
 
                 
-                return <div className={styles.modal} style={{backgroundColor: color}}    >
+                return <div key={idx} className={styles.modal} style={{backgroundColor: color}}    >
                     <Image 
                     src={`/image/${src}`}
                     width={300}

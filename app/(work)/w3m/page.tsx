@@ -12,15 +12,15 @@ import Link from "next/link";
 import FramerMagnetic from '@/components/framer';
 import { MoveUpRight , Briefcase ,Figma    } from 'lucide-react';
 
-const about = () => {
+const Web3m = () => {
 
   const [isLoading, setIsLoading] = useState(true);
   
   useEffect( () => {
     (
       async () => {
-          const LocomotiveScroll = (await import('locomotive-scroll')).default
-          const locomotiveScroll = new LocomotiveScroll();
+          // const LocomotiveScroll = (await import('locomotive-scroll')).default
+          // const locomotiveScroll = new LocomotiveScroll();
 
           setTimeout( () => {
             setIsLoading(false);
@@ -37,7 +37,7 @@ const about = () => {
 
     const lenis = new Lenis()
 
-    function raf(time) {
+    function raf(time:any) {
       lenis.raf(time)
       requestAnimationFrame(raf)}
 
@@ -59,7 +59,7 @@ const about = () => {
   useEffect( () => {
     const lenis = new Lenis()
 
-    const raf = (time) => {
+    const raf = (time:any) => {
       lenis.raf(time)
       requestAnimationFrame(raf)
     }
@@ -259,4 +259,4 @@ const about = () => {
 }
  
 
-export default about;
+export default Web3m;

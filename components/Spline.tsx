@@ -109,19 +109,19 @@ const Spline = forwardRef<HTMLDivElement, SplineProps>(
       if (canvasRef.current) {
         speApp = new Application(canvasRef.current, { renderOnDemand });
 
-        async function init() {
+        const init = async () => {
           await speApp.load(scene);
-
+    
           for (let event of events) {
             if (event.cb) {
               speApp.addEventListener(event.name, event.cb);
             }
           }
-
+    
           setIsLoading(false);
           onLoad?.(speApp);
         }
-
+    
         init();
       }
 
@@ -157,5 +157,7 @@ const Spline = forwardRef<HTMLDivElement, SplineProps>(
     );
   }
 );
+
+Spline.displayName = "Spline";
 
 export default Spline;

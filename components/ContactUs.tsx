@@ -1,5 +1,5 @@
 "use client"
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, ChangeEvent, FormEvent  } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 // import useAnalyticsEventTracker from "./useAnalyticsEventTracker";
@@ -19,9 +19,9 @@ import { ArrowDownRight , Instagram } from 'lucide-react';
 
 const Contact = () => {
   const formRef = useRef();
-  const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAIL_JS_USER;
-const SERVICE_ID = process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE;
-const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE;
+  const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAIL_JS_USER || "";
+const SERVICE_ID = process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE || "";
+const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE || "";
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -33,11 +33,11 @@ const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE;
 
 //   const gaEventTracker = useAnalyticsEventTracker("Contact us");
 
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
+const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  setForm({ ...form, [e.target.name]: e.target.value });
+};
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
     // gaEventTracker("email sent");
@@ -113,7 +113,7 @@ const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE;
     >
       <div className="">
         <div className="flex items-end gap-4"> 
-        <p className="text-3xl md:text-6xl text-white ">Let's start a project together</p>
+        <p className="text-3xl md:text-6xl text-white ">Let&apos;s start a project together</p>
          <ArrowDownRight className="h-20 w-20 md:h-10 md:w-10 text-white" />
         </div>
         

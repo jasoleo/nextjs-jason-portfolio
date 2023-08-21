@@ -31,9 +31,9 @@ export const SheetDemo:React.FC<open> = ({isSheetOpen, setSheetOpen}) => {
 
  
     const formRef = useRef();
-    const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAIL_JS_USER;
-  const SERVICE_ID = process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE;
-  const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE;
+    const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAIL_JS_USER || "";
+  const SERVICE_ID = process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE || "";
+  const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE || "";
     const [form, setForm] = useState({
       name: "",
       email: "",
@@ -109,7 +109,7 @@ export const SheetDemo:React.FC<open> = ({isSheetOpen, setSheetOpen}) => {
         <SheetHeader>
           <SheetTitle>Contact</SheetTitle>
           <SheetDescription className="pb-5">
-          Let's start a project together !
+          Let&apos;s start a project together !
           </SheetDescription>
         </SheetHeader>
         <form
