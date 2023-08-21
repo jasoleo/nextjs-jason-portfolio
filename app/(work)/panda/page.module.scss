@@ -1,0 +1,50 @@
+.gallery{
+    height: 110vh;
+    background: rgb(0, 0, 0);
+    position: relative;
+    display: flex;
+    gap: 2vw;
+    // justify-items: center;
+    // padding: 2vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    .column{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        min-width: 100px;
+        display: flex;
+        flex-direction: column;
+        // gap: 2vw;
+        .imageContainer{
+            top: -40%;
+            height: 100%;
+            width: 100%;
+            position: relative;
+            // border-radius: 1vw;
+            overflow: hidden;
+            img{
+                object-fit: cover;
+            }
+        }
+       
+       
+    }
+}
+.spacer{
+    height: 100vh;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .gallery { 
+        height: 90vh;
+    .column{        
+    
+    .imageContainer{
+        top: -40%;
+        height: 100%;
+    }
+}
+}
+  }

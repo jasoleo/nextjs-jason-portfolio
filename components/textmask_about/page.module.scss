@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10vw;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  overflow: hidden;
+}
+
+// .body{
+//   font-size: 5vw;
+// }
+
+.lineMask{
+  overflow: hidden;
+}
+
+.lineMask p{
+  margin: 50px;
+  // font-weight: 700;
+}

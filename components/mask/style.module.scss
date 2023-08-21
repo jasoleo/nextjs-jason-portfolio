@@ -1,0 +1,33 @@
+.container{
+    height: 250vh;
+    position: relative;
+    z-index: -1;
+    .sticky{
+        position: sticky;
+        top: 0;
+        height: 100vh;
+
+        .mask{
+            height: 100%;
+            overflow: hidden;  mask-image: url('../../public/medias/shape.svg');
+            mask-repeat: no-repeat;
+            mask-position: center center;
+            z-index: 4;
+            position: relative;
+            video{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .background{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-color: black;
+            top: 0;
+            z-index: 5;
+        }
+    }
+}
