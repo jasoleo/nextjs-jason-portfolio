@@ -8,15 +8,11 @@ import Preloader from '../components/preloader';
 import { AnimatePresence } from 'framer-motion';
 import React from "react";
 import Lenis from '@studio-freight/lenis';
-import Mask from '../components/mask';
-import { AppProps } from 'next/app';
-import Double from '../components/double';
+import Double from '@/components/Double';
 import styles from './page.module.scss';
 import { projects } from '../components/data';
-import { CldVideoPlayer } from 'next-cloudinary';
 import Textmask from "../components/textmask";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 
 
 export default function Home(index ,href ) {
@@ -84,7 +80,7 @@ export default function Home(index ,href ) {
        <Link href='/work' ><Double  projects={[projects[0] , projects[1]]} />               
         <Double projects={[projects[2], projects[3]]} reversed={true}/></Link>
        
-        {/* <Double projects={[projects[6], projects[7]]} reversed={true}/> */}
+        
       </div>
       </div>
       
