@@ -133,7 +133,7 @@ const Pipl = () => {
 </Link>
 </div>
 
-        <div className="grid items-center justify-center gap-y-40"> <video muted autoPlay loop 
+        <div className="grid items-center justify-center gap-y-40"> <video muted autoPlay loop playsInline
           src="/video/pipl_1.mp4"
           height={1920}
           width={1920}
@@ -142,7 +142,7 @@ const Pipl = () => {
           <h1 className=" pt-12 indent-20 text-3xl sm:text-4xl lg:text-6xl ">WeArePiplWorld is a philanthropic community-driven NFT project, where I took the helm in UI design and front-end development, ensuring a seamless and impactful digital representation for the cause.</h1>
                 </div>
      <div className="grid items-center justify-center">
-                <video muted autoPlay loop 
+                <video muted autoPlay loop playsInline
                 className=""
           src="/video/pipl_2.mp4"
           height={1920}
@@ -215,7 +215,7 @@ const Pipl = () => {
       <h1 className="text-4xl md:text-6xl py-5  grid items-center justify-center ">WeAre</h1>     
       <div className="rounded-2xl overflow-auto  ">
       <Link href="/weare"  >
-    <video muted loop autoPlay 
+    <video muted loop autoPlay playsInline
              onMouseOver={event => {
               const target = event.target as HTMLVideoElement;
               target.play();

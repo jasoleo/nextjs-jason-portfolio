@@ -155,7 +155,7 @@ const Proedu = () => {
       <h1 className="text-6xl py-5 grid items-center justify-center">ProEdge</h1>     
       <div className="rounded-2xl overflow-auto">
       <Link href="/proedge"  >
-    <video muted loop autoPlay 
+    <video muted loop autoPlay playsInline
            onMouseOver={event => {
             const target = event.target as HTMLVideoElement;
             target.play();

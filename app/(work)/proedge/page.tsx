@@ -133,7 +133,7 @@ const Proedge = () => {
          
 
         </div>
-        <div className="grid items-center justify-center gap-y-40"> <video muted autoPlay loop 
+        <div className="grid items-center justify-center gap-y-40"> <video muted autoPlay loop playsInline
           src="/video/proedge_1.mp4"
           height={1920}
           width={1920}
@@ -141,7 +141,7 @@ const Proedge = () => {
           <h1 className=" pt-12 indent-20 text-3xl sm:text-4xl lg:text-6xl ">ProEdge is a 3D company website for which I led the UI design, front-end development, and crafted intricate 3D models to bring a dynamic and immersive digital presence to the brand.</h1>
                 </div>
      <div className="grid items-center justify-center">
-                <video muted autoPlay loop 
+                <video muted autoPlay loop playsInline
                 className=""
           src="/video/proedge_2.mp4"
           height={1920}
@@ -217,7 +217,7 @@ const Proedge = () => {
       <video 
   muted 
   loop 
-  autoPlay 
+  autoPlay playsInline
   onMouseOver={event => {
     const target = event.target as HTMLVideoElement;
     target.play();

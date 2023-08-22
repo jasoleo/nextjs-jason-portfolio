@@ -133,7 +133,7 @@ const Web3m = () => {
 </Link>
 </div>
 
-        <div className="grid items-center justify-center gap-y-40"> <video muted autoPlay loop 
+        <div className="grid items-center justify-center gap-y-40"> <video muted autoPlay loop playsInline
           src="/video/w3m_1.mp4"
           height={1920}
           width={1920}
@@ -146,7 +146,7 @@ const Web3m = () => {
 <div className=" flex justify-center m-5">
 
 <div className=" ">
-                <video muted autoPlay loop 
+                <video muted autoPlay loop playsInline
                 className=""
           src="/video/w3m_macmobile.mp4"
           height={2500}

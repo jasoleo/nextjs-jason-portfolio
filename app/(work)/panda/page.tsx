@@ -142,7 +142,7 @@ const Panda = () => {
       
 
      <div className="grid items-center justify-center">
-                <video muted autoPlay loop 
+                <video muted autoPlay loop playsInline
                 className=""
           src="/video/panda_mobile2.mp4"
           height={1080}
@@ -151,7 +151,7 @@ const Panda = () => {
       </div>
 
      <div className="grid items-center justify-center">
-                <video muted autoPlay loop 
+                <video muted autoPlay loop playsInline
                 className=""
           src="/video/panda_mobile3.mp4"
           height={1080}
@@ -243,7 +243,7 @@ const Panda = () => {
       <h1 className="text-4xl md:text-6xl py-5  grid items-center justify-center ">WeArePiplWorld</h1>     
       <div className="rounded-2xl overflow-auto  ">
       <Link href="/pipl"  >
-    <video muted loop autoPlay 
+    <video muted loop autoPlay playsInline
             onMouseOver={event => {
               const target = event.target as HTMLVideoElement;
               target.play();

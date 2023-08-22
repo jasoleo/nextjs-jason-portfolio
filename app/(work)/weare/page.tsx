@@ -133,7 +133,7 @@ const Weare = () => {
 </Link>
 </div>
 
-        <div className="grid items-center justify-center gap-y-40"> <video muted autoPlay loop 
+        <div className="grid items-center justify-center gap-y-40"> <video muted autoPlay loop playsInline
           src="/video/weare.mp4"
           height={1920}
           width={1920}
@@ -142,7 +142,7 @@ const Weare = () => {
           <h1 className=" pt-12 indent-20 text-3xl sm:text-4xl lg:text-6xl ">WeAre is an exclusive NFT project showcasing the masterpieces of award-winning motion and illustration artist John-Johnny, and I had the privilege of crafting its digital presence through meticulous UI design and front-end development.</h1>
                 </div>
      <div className="grid items-center justify-center">
-                <video muted autoPlay loop 
+                <video muted autoPlay loop playsInline
                 className=""
           src="/video/weare_2.mp4"
           height={1920}
@@ -215,7 +215,7 @@ const Weare = () => {
       <h1 className="text-4xl md:text-6xl py-5  grid items-center justify-center ">Panda Warrior</h1>     
       <div className="rounded-2xl overflow-auto  ">
       <Link href="/w3m"  >
-    <video muted loop autoPlay 
+    <video muted loop autoPlay playsInline
             onMouseOver={event => {
               const target = event.target as HTMLVideoElement;
               target.play();
