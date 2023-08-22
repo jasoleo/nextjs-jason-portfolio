@@ -121,7 +121,7 @@ const Panda = () => {
          
 
         </div>
-        <div className="grid items-center justify-center gap-y-40"> <video muted autoPlay loop 
+        <div className="grid items-center justify-center gap-y-40"> <video muted autoPlay loop playsInline
           src="/video/panda.mp4"
           height={1920}
           width={1920}
