@@ -47,30 +47,28 @@ const aboutHero = () => {
             fill={true}
             alt="background"
             />  */}
-            <div className='h-[100vh] '   >
- <Spline className='' scene="https://prod.spline.design/4FjTuSjxI5SWmvyZ/scene.splinecode"   onLoad={(spline: Application) => {
+            {/* <div className='h-[100vh] '   >
+ <Spline className='' scene="https://prod.spline.design/ni4468N2brPoJUwp/scene.splinecode"   onLoad={(spline: Application) => {
         
-      }} /></div>
+      }} /></div> */}
       
-        <div className="absolute inset-x-0 inset-y-0 rounded-3xl border border-zinc-400 m-5  " id="home">
+        <div className=" overflow-hidden  rounded-3xl border border-zinc-400 m-5  " id="home">
 
       
 
-        <div className=" relative  " >      
+        <div className="   " >      
         <div className=" flex justify-center items-center text-white p-10  ">
           <p className=" ring-1 ring-white  rounded-lg p-2 py-1 ">About</p>
           </div>
           <div className="flex flex-col text-3xl sm:text-6xl justify-center items-center text-white">
           <p className=" drop-shadow-xl font-light tracking-tight ">Hi, I&apos;m Jason</p>
-          
-         
           </div>
-       
           </div>
-          <div className=' absolute justify-center inset-0 z-5 scale-75 ml-[-30vh] pt-32 w-max h-[130vh] -translate-y-32
-          sm:ml-[-15vh] 
-          md:pt-0 md:ml-0 md:w-screen md:-translate-y-10 md:h-[120vh] ' >
+
+          <div className=" overflow-hidden ">
+          <div className=' flex z-5 justify-center items-center  h-screen -m-40 scale-75 md:m-0 md:scale-100 md:w-screen ' >
         <Spline className='' scene="https://prod.spline.design/RO6E0rHX4z66Oi7n/scene.splinecode" />
+        </div>
         </div>
         
           </div>
