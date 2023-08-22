@@ -132,7 +132,7 @@ const Panda = () => {
      <div className="md:flex py-10">
 
      <div className="grid items-center justify-center">
-                <video muted autoPlay loop 
+                <video  muted autoPlay loop playsInline 
                 className=""
           src="/video/panda_mobile.mp4"
           height={1080}
