@@ -66,7 +66,7 @@ const aboutHero = () => {
           </div>
 
           <div className=" overflow-hidden ">
-          <div className=' flex z-5 justify-center items-center  h-screen -m-40 scale-75 md:m-0 md:scale-100 md:w-screen ' >
+          <div className=' flex z-5 justify-center items-center  h-screen -m-32 scale-75 md:m-0 md:scale-100 md:w-screen ' >
         <Spline className='' scene="https://prod.spline.design/RO6E0rHX4z66Oi7n/scene.splinecode" />
         </div>
         </div>
