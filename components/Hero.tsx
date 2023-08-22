@@ -44,7 +44,7 @@ export default function Hero() {
     <div className="  rounded-3xl border border-zinc-900 m-5 my-0  " id="home">
     <div className="static  " >
     <div className="font-abc flex my- justify-center items-center text-white p-10">
-      <p className="ring-[0.3px] ring-white  rounded-lg p-2 py-1">Porfolio 2023</p>
+      <p className="ring-[0.3px] ring-white  rounded-lg p-2 py-1">Portfolio 2023</p>
       </div>
       <div className="flex flex-col text-8xl -space-y-4 lg:-space-y-8 mt-20  justify-center items-center text-white  md:text-[12rem]  ">
       <p className=" font-light tracking-tight ">JASON</p>
