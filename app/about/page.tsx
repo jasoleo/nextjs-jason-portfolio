@@ -8,6 +8,9 @@ import  {SheetDemo}  from "@/components/sheet";
 import Lenis from '@studio-freight/lenis';
 import { Suspense, useEffect, useState } from "react";
 import Preloader from '@/components/preloader/preloader_about';
+import FramerMagnetic from '@/components/framer';
+import {  Briefcase    } from 'lucide-react';
+import Link from "next/link";
 
 
 
@@ -56,6 +59,19 @@ const AboutPage = () => {
     <div className=" py-8"></div>
     <About />
 <Textmask />
+
+<div className="flex items-center justify-center p-10">
+<Link href='/work' >
+<FramerMagnetic>
+  <div className="cursor-pointer rounded-full border text-white hover:text-purple-500 border-white hover:border-purple-500 p-5">
+<div className="gap-4  flex items-center justify-center">
+  <p className="">View My Work</p>
+  <Briefcase    />
+  </div>
+  </div>
+</FramerMagnetic>
+</Link>
+</div>
 
 <Contact />
 

@@ -3,6 +3,7 @@ import styles from './page.module.scss';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
+
 const phrases = [
   <span key="phrase1" className="text-2xl indent-8 items-center justify-center font-light text-start md:text-5xl">       
     Freelancer for <span className="font-medium text-sky-500"> UI designe </span>&amp; <span className="font-medium text-violet-500">Web frontend development</span>.
@@ -37,6 +38,9 @@ export function MaskText() {
         phrases.map((phrase, index) => (
           <div key={index} className={styles.lineMask}>
             <motion.p custom={index} variants={animation} initial="initial" animate={inView ? "enter" : ""}>{phrase}</motion.p>
+
+            
+
           </div>
         ))
       }
