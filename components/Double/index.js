@@ -58,7 +58,7 @@ export default function Index({projects, reversed,   }) {
        
           <div className={styles.stretchyWrapper}>
           
-              <video muted loop  
+              <video muted loop  playsInline
              onMouseOver={event => event.target.play()}
              onMouseOut={event => event.target.pause()}
               src={`/video/${projects[0].src}` } 
@@ -82,7 +82,7 @@ export default function Index({projects, reversed,   }) {
   
         <div ref={secondImage} className={styles.imageContainer}>
           <div className={styles.stretchyWrapper}>
-            <video  muted loop
+            <video  muted loop playsInline
              onMouseOver={event => event.target.play()}
              onMouseOut={event => event.target.pause()}
               src={`/video/${projects[1].src}`}

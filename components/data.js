@@ -3,7 +3,7 @@ export const projects = [
         name: "ProEdge",
         client: "Grow",
         description: "A 3D company site for a technology company.",
-        src: "proedge_1.mp4" ,
+        src: "/proedge_1.mp4" ,
         year: 2023,
         href:'/proedu'
         
@@ -12,7 +12,7 @@ export const projects = [
         name: "ProEdge Promo Ad",
         client: "POWELL—STUDIO",
         description: "Video Ad of Proedge Technology.",
-        src: "web3city.mp4",
+        src: "/web3city.mp4",
         year: 2023,
         href:'/proedu'
     },

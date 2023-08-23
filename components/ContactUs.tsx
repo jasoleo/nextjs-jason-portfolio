@@ -88,7 +88,7 @@ const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
 
   return (
     
-    <div className="">
+    <div className="pt-20">
    {/* <div className=" ">
       <div className='flex items-center justify-center rounded-3xl border border-zinc-900 p-10  hover:bg-white hover:text-black'>
       <Instagram strokeWidth={1.5} />
