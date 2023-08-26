@@ -13,6 +13,8 @@ import styles from './page.module.scss';
 import { projects } from '../components/data';
 import Textmask from "../components/textmask";
 import Link from "next/link";
+import FramerMagnetic from '@/components/framer';
+import {  Briefcase    } from 'lucide-react';
 
 
 export default function Home(index ,href ) {
@@ -83,6 +85,19 @@ export default function Home(index ,href ) {
         
       </div>
       </div>
+
+      <div className="flex items-center justify-center p-10 mt-20 md:mt-0">
+<Link href='/work' >
+<FramerMagnetic>
+  <div className="cursor-pointer rounded-full border text-white hover:text-purple-500 border-white hover:border-purple-500 p-5">
+<div className="gap-4  flex items-center justify-center">
+  <p className="">View My Work</p>
+  <Briefcase    />
+  </div>
+  </div>
+</FramerMagnetic>
+</Link>
+</div>
       
    <Contact />
    
