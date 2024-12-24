@@ -1,6 +1,7 @@
 'use client';
 import styles from './style.module.scss';
 import { useRef } from 'react'; 
+import Link from "next/link";
 
 export default function Index({projects, reversed,   }) {
 
@@ -54,17 +55,18 @@ export default function Index({projects, reversed,   }) {
 
 
 
-        <div  ref={firstImage} className={styles.imageContainer}>
+        <div ref={firstImage} className={styles.imageContainer}>
        
           <div className={styles.stretchyWrapper}>
-          
+          <Link href={projects[0].href}>          
               <video muted loop autoPlay playsInline
              onMouseOver={event => event.target.play()}
              onMouseOut={event => event.target.pause()}
               src={`/video/${projects[0].src}` } 
               fill={true}
-              alt={"video/mp4"}/>
-              
+              alt={"video/mp4"}
+              />
+              </Link>
              
               
           </div>
@@ -82,6 +84,7 @@ export default function Index({projects, reversed,   }) {
   
         <div ref={secondImage} className={styles.imageContainer}>
           <div className={styles.stretchyWrapper}>
+          <Link href={projects[1].href}>    
             <video muted loop autoPlay playsInline
              onMouseOver={event => event.target.play()}
              onMouseOut={event => event.target.pause()}
@@ -89,6 +92,7 @@ export default function Index({projects, reversed,   }) {
               fill={true}
               alt={"video/mp4"}
             />
+            </Link>
           </div>
           <div className={styles.body}>
               <h3>{projects[1].name}</h3>

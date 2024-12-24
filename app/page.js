@@ -66,10 +66,10 @@ export default function Home(index ,href ) {
       <div className=" p-10"></div>
       <Hero />
       <div className="font-abc flex  justify-center items-center text-white p-10">
-      <p className="ring-[0.3px] ring-white  rounded-lg p-2 py-1">Service</p>
+      <p className="ring-[0.3px] ring-white  rounded-lg p-2 py-1">Skills</p>
       </div>
     <ServiceCard />
-   <Textmask />
+   
    <div className="font-abc flex my- justify-center items-center text-white p-10">
       <p className="ring-[0.3px] ring-white  rounded-lg p-2 py-1">Recent Work</p>
       </div>
@@ -79,8 +79,10 @@ export default function Home(index ,href ) {
        
       
         
-       <Link href='/work' ><Double  projects={[projects[0] , projects[1]]} />               
-        <Double projects={[projects[2], projects[3]]} reversed={true}/></Link>
+       {/* <Link href='/work' > */}
+       <Double  projects={[projects[0] , projects[1]]} />               
+        <Double projects={[projects[2], projects[3]]} reversed={true}/>
+        {/* </Link> */}
        
         
       </div>
@@ -91,13 +93,14 @@ export default function Home(index ,href ) {
 <FramerMagnetic>
   <div className="cursor-pointer rounded-full border text-white hover:text-purple-500 border-white hover:border-purple-500 p-5">
 <div className="gap-4  flex items-center justify-center">
-  <p className="">View My Work</p>
+  <p className="">View All My Work</p>
   <Briefcase    />
   </div>
   </div>
 </FramerMagnetic>
 </Link>
 </div>
+<Textmask />
       
    <Contact />
    

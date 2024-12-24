@@ -14,7 +14,7 @@ export const projects = [
         description: "Video Ad of Proedge Technology.",
         src: "/web3city.mp4",
         year: 2023,
-        href:'/proedu'
+        href:'/proedge'
     },
     {
         name: "Panda Warroir",
