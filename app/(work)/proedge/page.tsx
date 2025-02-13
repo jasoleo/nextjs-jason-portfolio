@@ -134,7 +134,7 @@ const Proedge = () => {
 
         </div>
         <div className="grid items-center justify-center gap-y-40"> <video muted autoPlay loop playsInline
-          src="/video/proedge_1.mp4"
+          src="/video/proedge_1.webm"
           height={1920}
           width={1920}
        /></div>
@@ -143,7 +143,7 @@ const Proedge = () => {
      <div className="grid items-center justify-center">
                 <video muted autoPlay loop playsInline
                 className=""
-          src="/video/proedge_2.mp4"
+          src="/video/proedge_2.webm"
           height={1920}
           width={1920}
        />
@@ -226,7 +226,7 @@ const Proedge = () => {
     const target = event.target as HTMLVideoElement;
     target.pause();
   }}
-  src='video/panda.mp4' 
+  src='video/panda.webm' 
   height={500}
   width={500}
 />

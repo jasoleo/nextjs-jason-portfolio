@@ -122,7 +122,7 @@ const Panda = () => {
 
         </div>
         <div className="grid items-center justify-center gap-y-40"> <video muted autoPlay loop playsInline
-          src="/video/panda.mp4"
+          src="/video/panda.webm"
           height={1920}
           width={1920}
       /></div>
@@ -134,7 +134,7 @@ const Panda = () => {
      <div className="grid items-center justify-center">
                 <video  muted autoPlay loop playsInline 
                 className=""
-          src="/video/panda_mobile.mp4"
+          src="/video/panda_mobile.webm"
           height={1080}
           width={1920}
        />
@@ -144,7 +144,7 @@ const Panda = () => {
      <div className="grid items-center justify-center">
                 <video muted autoPlay loop playsInline
                 className=""
-          src="/video/panda_mobile2.mp4"
+          src="/video/panda_mobile2.webm"
           height={1080}
           width={1920}
        />
@@ -153,7 +153,7 @@ const Panda = () => {
      <div className="grid items-center justify-center">
                 <video muted autoPlay loop playsInline
                 className=""
-          src="/video/panda_mobile3.mp4"
+          src="/video/panda_mobile3.webm"
           height={1080}
           width={1920}
        />
@@ -253,7 +253,7 @@ const Panda = () => {
               target.pause();
             }}
            
-              src='video/pipl_1.mp4' 
+              src='video/pipl_1.webm' 
               height={500}
               width={500}
               />

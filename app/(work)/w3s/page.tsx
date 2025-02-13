@@ -134,7 +134,7 @@ const Web3s = () => {
 </div>
 
         <div className="grid items-center justify-center gap-y-40"> <video muted autoPlay loop playsInline
-          src="/video/w3s.mp4"
+          src="/video/w3s.webm"
           height={1920}
           width={1920}
       /></div>
@@ -148,7 +148,7 @@ const Web3s = () => {
 <div className=" ">
                 <video muted autoPlay loop playsInline
                 className=""
-          src="/video/w3s_1.mp4"
+          src="/video/w3s_1.webm"
           height={1920}
           width={1920}
       />

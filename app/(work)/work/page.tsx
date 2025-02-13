@@ -69,7 +69,7 @@ useEffect( () => {
                 <div className="flex md:w-[90vh] p-10 pt-48">
                 <h1 className="text-2xl  md:text-5xl">Creating next level
                 digital products</h1>
-                <p className="w-[45vh] text-gray-500">2021-2023</p></div>
+                <p className="w-[45vh] text-gray-500">2021-2024</p></div>
                 <Gallery />
                 <div className="pt-48">
                 <Contact />

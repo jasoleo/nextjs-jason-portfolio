@@ -164,7 +164,7 @@ const Proedu = () => {
             const target = event.target as HTMLVideoElement;
             target.pause();
           }}
-              src='video/proedge_1.mp4' 
+              src='video/proedge_1.webm' 
               height={500}
               width={500}
              />

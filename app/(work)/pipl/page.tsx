@@ -134,7 +134,7 @@ const Pipl = () => {
 </div>
 
         <div className="grid items-center justify-center gap-y-40"> <video muted autoPlay loop playsInline
-          src="/video/pipl_1.mp4"
+          src="/video/pipl_1.webm"
           height={1920}
           width={1920}
        /></div>
@@ -144,7 +144,7 @@ const Pipl = () => {
      <div className="grid items-center justify-center">
                 <video muted autoPlay loop playsInline
                 className=""
-          src="/video/pipl_2.mp4"
+          src="/video/pipl_2.webm"
           height={1920}
           width={1920}
      />
@@ -224,7 +224,7 @@ const Pipl = () => {
               const target = event.target as HTMLVideoElement;
               target.pause();
             }}
-              src='video/weare.mp4' 
+              src='video/weare.webm' 
               height={500}
               width={500}
               />

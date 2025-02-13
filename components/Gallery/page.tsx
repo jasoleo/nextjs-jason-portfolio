@@ -7,6 +7,14 @@ import Modal from '../Gallery/model';
 
 const projects = [
   {
+    title: "ClapTech PathWay Career Test",
+    href: "/claptech",
+    src: "Wireframe19.png",
+    color: "#204DFF",
+    role: "Design, Develop, 3D Model",
+    year: '2024'
+  },
+  {
     title: "ProEdu",
     href: "/proedu",
     src: "proedu.png",

@@ -134,7 +134,7 @@ const Weare = () => {
 </div>
 
         <div className="grid items-center justify-center gap-y-40"> <video muted autoPlay loop playsInline
-          src="/video/weare.mp4"
+          src="/video/weare.webm"
           height={1920}
           width={1920}
       /></div>
@@ -144,7 +144,7 @@ const Weare = () => {
      <div className="grid items-center justify-center">
                 <video muted autoPlay loop playsInline
                 className=""
-          src="/video/weare_2.mp4"
+          src="/video/weare_2.webm"
           height={1920}
           width={1920}
      />
@@ -224,7 +224,7 @@ const Weare = () => {
               const target = event.target as HTMLVideoElement;
               target.pause();
             }}
-              src='video/w3m_1.mp4' 
+              src='video/w3m_1.webm' 
               height={500}
               width={500}
               />
